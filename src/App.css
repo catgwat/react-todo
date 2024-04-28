@@ -1,0 +1,12 @@
+.App {
+  min-height: 83vh;
+  margin-bottom: 0 !important;
+  text-align: center;
+}
+
+section.login, section.categories, section.about {
+  min-height: 82vh;
+}
+
+
+

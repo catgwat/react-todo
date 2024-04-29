@@ -2,3 +2,27 @@ section.about {
     background-image: url(../../assets/images/joanna-kosinska-bF2vsubyHcQ-unsplash.jpg);
     background-size: 100%;
   }
+
+  .profilePic {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    border-color: #efecba;
+  }
+
+  .about-text {
+    background: #fdfbd9e7;
+    border-radius: 10px;
+    padding-top: 30px;
+    border: 8px solid transparent;
+    font-size: larger;
+  }
+
+  .about-text p {
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  
+  

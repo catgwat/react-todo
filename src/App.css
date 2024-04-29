@@ -4,7 +4,7 @@
   text-align: center;
 }
 
-section.login, section.categories, section.about {
+section.login, section.categories, section.about, section.todos{
   min-height: 82vh;
 }
 

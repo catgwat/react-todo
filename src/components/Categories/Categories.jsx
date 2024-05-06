@@ -3,6 +3,8 @@ import axios from "axios"
 import SingleCategory from "./SingleCategory"
 import {useAuth} from '../../contexts/AuthContext'
 import CatCreate from "./CatCreate"
+import "./Categories.css"
+import "../../index.css"
 
 export default function Categories() {
   const [categories, setCategories] = useState([])
@@ -23,14 +25,14 @@ export default function Categories() {
 
   return (
     <section className="categories">
-      <article className="bg-info p-5">
+      <article className="bg-warning p-5">
         <h1 className="text-center">Categories Dashboard</h1>
       </article>
       {/* BEGIN CREATE UI */}
       {currentUser.email === import.meta.env.VITE_ADMIN_EMAIL &&
             <div className="bg-dark p-2 mb-3 text-center">
                 {!showCreate ?
-                <button onClick={() => setShowCreate(true)} className='btn btn-info'>
+                <button onClick={() => setShowCreate(true)} className='btn btn-success'>
                     Create Category
                 </button> :
                 <>
@@ -44,8 +46,8 @@ export default function Categories() {
         }
         {/* END CREATE UI */}
       <div className="container p-2">
-        <table className="table bg-info table-dark my-3">
-          <thead className="table-secondary text-uppercase">
+        <table className="table bg-light table-dark table-striped my-3">
+          <thead className="table-light text-uppercase">
             <tr>
               <th>Name</th>
               <th>Description</th>
